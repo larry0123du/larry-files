@@ -1,0 +1,15 @@
+#HTML Tags#
+##homework1##
+---
+- <strong style="font-size:30px;font-family:cursive;">div</strong>
+    * A block-level logical division
+    * no actual meaning
+    * used to distinguish document section
+    </style>
+- <strong style="font-size:30px;font-family:cursive">link</strong>
+    - links to other documents
+    - can be used tolink to external stylesheet
+    - also can be used to supply navigation hints
+- <strong style="font-size:30px;font-family:cursive">script</strong>
+    - use as a container for script instructions
+    - link to external scripts
