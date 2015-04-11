@@ -14,22 +14,16 @@ str.each_line { |line|
     end
   }
 }
-end
+
 
 #h.sort{|a,b| a[1]<=>b[1]}.reverse_each { |e|
   #puts "\"#{e[0]}\" has #{e[1]} occurrences"
 #}.first(10)
 
-h.sort_by{|has_key,value| value}.reverse
-num = 0
-h.each { |e|
-   if num <= 100
-  	puts "\"#{e[0]}\" has #{e[1]} occurrences"
-  	num += 1
-  else
-  	break
-  end
+h.sort{|a,b| a[1]<=>b[1] }.reverse_each { |e|
+  	puts "\"#{e[0]}\" appeared #{e[1]} times"
 }
+end
 
 thr1 = Thread.new{webgrabber()}
 thr2 = Thread.new{webgrabber()}
@@ -51,23 +45,23 @@ thr17 = Thread.new{webgrabber()}
 thr18 = Thread.new{webgrabber()}
 thr19 = Thread.new{webgrabber()}
 thr20 = Thread.new{webgrabber()}
-thr1 = join
-thr2 = join
-thr3 = join
-thr4 = join
-thr5 = join
-thr6 = join
-thr7 = join
-thr8 = join
-thr9 = join
-thr10 = join
-thr11 = join
-thr12 = join
-thr13 = join
-thr14 = join
-thr15 = join
-thr16 = join
-thr17 = join
-thr18 = join
-thr19 = join
-thr20 = join
+thr1.join
+thr2.join
+thr3.join
+thr4.join
+thr5.join
+thr6.join
+thr7.join
+thr8.join
+thr9.join
+thr10.join
+thr11.join
+thr12.join
+thr13.join
+thr14.join
+thr15.join
+thr16.join
+thr17.join
+thr18.join
+thr19.join
+thr20.join
