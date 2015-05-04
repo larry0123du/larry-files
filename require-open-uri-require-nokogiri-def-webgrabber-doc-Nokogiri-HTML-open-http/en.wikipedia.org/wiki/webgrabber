@@ -20,7 +20,7 @@ h.sort{|a,b| a[1]<=>b[1] }.reverse_each { |e|
   	puts "\"#{e[0]}\" appeared #{e[1]} times"
 }
 end
-#没想出来怎么找前100个
+
 
 thr1 = Thread.new{webgrabber()}
 thr2 = Thread.new{webgrabber()}
